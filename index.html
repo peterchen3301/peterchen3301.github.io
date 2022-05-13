@@ -1,239 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<head>
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 </style>
-<body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
-        <a href="#" class="w3-bar-item w3-button">Extras</a>
-        <a href="#" class="w3-bar-item w3-button">Media</a>
-      </div>
-    </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-  </div>
-</div>
+</head>
+<body class="w3-light-grey">
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
-</div>
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1500px;">
 
-<!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
-
-  <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
-    <img src="https://www.ivyboarding.com/w3template/w3images/chicago.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Los Angeles</h3>
-      <p><b>We had the best time playing at Venice Beach!</b></p>   
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="https://www.w3schools.com/w3images/ny.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>New York</h3>
-      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
-    </div>
-  </div>
-  <!--
-  <div class="mySlides w3-display-container w3-center">
-    <img src="123" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Chicago</h3>
-      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
-    </div>
-  </div>
-  -->
-
-  <!-- The Band Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    <h2 class="w3-wide">THE BAND</h2>
-    <p class="w3-opacity"><i>We love music</i></p>
-    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
-      </div>
-    </div>
-  </div>
-
-  <!-- The Tour Section -->
-  <div class="w3-black" id="tour">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">TOUR DATES</h2>
-      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
-
-      <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
-      </ul>
-
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>New York</b></p>
-            <p class="w3-opacity">Fri 27 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third" style="max-width:400px;">
+    
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="snapshot.jpg" style="width:100%" alt="Nash33">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            
           </div>
         </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Paris</b></p>
-            <p class="w3-opacity">Sat 28 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>San Francisco</b></p>
-            <p class="w3-opacity">Sun 29 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+        <div class="w3-container">
+          <h2 class="w3-text-teal">Hsing-Yu (Peter) Chen</h2>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-grey"></i>Design Engineer : Software & Mechanical</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-grey"></i>Hsinchu, Taiwan</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-grey"></i>peterchen33011@gmail.com</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-grey"></i>+886-963-226-508</p>
+          <hr>
 
-  <!-- Ticket Modal -->
-  <div id="ticketModal" class="w3-modal">
-    <div class="w3-modal-content w3-animate-top w3-card-4">
-      <header class="w3-container w3-teal w3-center w3-padding-32"> 
-        <span onclick="document.getElementById('ticketModal').style.display='none'" 
-       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
-        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
-      </header>
-      <div class="w3-container">
-        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="How many?">
-        <p><label><i class="fa fa-user"></i> Send To</label></p>
-        <input class="w3-input w3-border" type="text" placeholder="Enter email">
-        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
-        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
-      </div>
-    </div>
-  </div>
+          <p class="w3-large"><b><i class="fa fa-product-hunt fa-fw w3-margin-right w3-text-teal"></i>Self intro</b></p>
+          <p>Howdy! This is an engineer, a awful 3rd-baseman and a guy with hearing disablilty that have learnt nothing but to look at people's face while listening.</p>
+          <p>While appreciating you're time looking into my profile, I wonder if I can offer what you need, but I surely got some stories that can make you laugh.</p>
+          <p>I do a little bit of everything, try to help everyone a little bit.</p>
 
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
-      </div>
-      <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-            </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-            </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-        </form>
-      </div>
+          <p class="w3-large"><b><i class="fa fa-cubes fa-fw w3-margin-right w3-text-teal"></i>Ask me about</b></p>
+          <p>Python | LabVIEW | C++ | SolidWorks | baseball | cooking | & everything else</p>
+
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
     </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-teal w3-padding-16"><i class="fa fa-microchip fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <div class="w3-container">
+          <img src="cymer_logo.png" style="width:10%; float:right;">
+          <h5 class="w3-opacity"><b>Design Engineer @ Cymer, ASML</b></h5>
+          <h6 class="w3-text-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul. 2020 - <span class="w3-tag w3-grey w3-round w3-text-white">Current</span></h6>
+          <p>I do everything that is required to make a lithography runs automatically.</p>
+          <p>I started as a LabVIEW developer, but now I write more of Python, C++ and kernel codes. I also do some PCB designing, mechanical designing and analysys.</p>
+          <p>Guess that's what engineering is like, to solve a problem, you gotta do a little bit of everything.</p>
+          <hr>
+        </div>
+
+        <div class="w3-container">
+          <img src="insightman_logo.png" style="width:10%; float:right;">
+          <h5 class="w3-opacity"><b>R.D. Engineer @ Insightman</b></h5>
+          <h6 class="w3-text-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul. 2018 - Jun. 2019</h6>
+          <p>I joint a start-up and we hand-made car emission monitors and sell them.</p>
+          <p>This is where we stated everything from scratch: raised funding, built-up a manufacturing line and got all the required instruments from school labs and flea markets
+            and figured out how to make products, or how to find the right person to do every part of it. 
+          </p>
+          <p>A truely funny time, and all left for me are precious moments.</p>
+          <img src="life_at_insightman.jpg" style="width:50%">
+          <hr>
+        </div>
+      </div>
+
+      
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-teal w3-padding-16"><i class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <h6 class="w3-text-grey">Woops! Got two masters and so many years of campus life...</h6>
+        <div class="w3-container">
+          <img src="tamu_logo.png" style="width:10%; float:right;">
+          <h5 class="w3-opacity"><b>Texas A&M University</b></h5>
+          <h6 class="w3-text-grey" ><i class="fa fa-calendar fa-fw w3-margin-right"></i>2019 - 2021</h6>
+          <h6 class="w3-text-grey">M.S. in Computer Engineering</h6>
+          <p>All I learnt from this school is greeting people with "Howdy!" and "Gig'em" and how to sing <a href="https://youtu.be/6h7T_zbPGBw">Aggie War Hymn</a>.</p>
+          <p>Maybe also some fundamental as a software engineer, like Github, StackOverFlow and operating my dumb programs from terminals to make my final project look 
+            a lot more decent than what is actually is.</p> 
+          <p>Also Leetcoded and interviewed a lot. Can you imagine how horrible it was to find a job within COVID era?</p>
+          </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <img src="ntu_logo.png" style="width:10%; float:right;">
+          <h5 class="w3-opacity"><b>National Taiwan University</b></h5>
+          <h6 class="w3-text-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016 - 2018</h6>
+          <h6 class="w3-text-grey">M.S. in Mechanical Engineering</h6>
+          <p>No! Not a duplication! I really wasted 2+ years getting a master degree because I dunno what to do upon graduation...</p>
+          <p>I joint TiMMeL and worked with a bunch of stand-up guys, though my research project was not so cool: it was about a portable blood flow sensor 
+            made with strain gauge and nothing more. I was advised by PhD. Wen-Pin Shih & PhD Chien-Hao Liu.</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <img src="ntu_logo.png" style="width:10%; float:right;">
+          <h5 class="w3-opacity"><b>National Taiwan University</b></h5>
+          <h6 class="w3-text-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012 - 2016</h6>
+          <h6 class="w3-text-grey">M.S. in Mechanical Engineering</h6>
+          <p>Fooling around will all my college life.</p>
+          <p>Made a samll game with AutoCAD. Probably the worst game engine one can ever choose.</p>
+          <iframe width="420" height="315"
+          src="https://www.youtube.com/embed/mwMVURAfi2c">
+          </iframe>
+          
+        </div>
+        <br>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
   </div>
   
-<!-- End Page Content -->
+  <!-- End Page Container -->
 </div>
 
-<!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+<footer class="w3-container w3-light-grey w3-center w3-margin-top">
+  <br>
+  <p>Will be cool if you find me through :</p>
+
+  <a href="https://www.facebook.com/peterchen0725/" class="icon-block">
+    <i class="fa fa-facebook-official w3-hover-opacity w3-xxlarge"></i>
+  </a>
+  <a href="https://www.instagram.com/peterchen33/" class="icon-block">
+    <i class="fa fa-instagram w3-hover-opacity w3-xxlarge"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/peterchen3301/" class="icon-block">
+    <i class="fa fa-linkedin w3-hover-opacity w3-xxlarge"></i>
+  </a>
+  <a href="https://github.com/peterchen3301" class="icon-block">
+    <i class="fa fa-github w3-hover-opacity w3-xxlarge"></i>
+  </a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
 </footer>
 
-<script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 4000);    
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
 
 </body>
 </html>
